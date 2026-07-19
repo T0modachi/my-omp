@@ -80,7 +80,24 @@
           "chrome-devtools-axi"
 
           # Matt Pocock skills
+          "engineering/code-review"
+          "engineering/codebase-design"
+          "engineering/diagnosing-bugs"
+          "engineering/domain-modeling"
+          "engineering/grill-with-docs"
+          "engineering/implement"
+          "engineering/improve-codebase-architecture"
+          "engineering/prototype"
+          "engineering/research"
+          "engineering/resolving-merge-conflicts"
+          "engineering/setup-matt-pocock-skills"
+          "engineering/tdd"
+          "engineering/to-spec"
+          "engineering/to-tickets"
+          "engineering/triage"
+          "engineering/wayfinder"
           "productivity/grill-me"
+          "productivity/teach"
         ];
       };
       targets = {
