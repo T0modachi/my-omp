@@ -48,31 +48,33 @@
         };
       };
       skills = {
-        # Caveman skills
-        caveman.enable = true;
-        cavecrew.enable = true;
-        caveman-commit.enable = true;
-        caveman-compress.enable = true;
-        caveman-help.enable = true;
-        caveman-review.enable = true;
-        caveman-stats.enable = true;
+        enable = [
+          # Caveman skills
+          "caveman"
+          "cavecrew"
+          "caveman-commit"
+          "caveman-compress"
+          "caveman-help"
+          "caveman-review"
+          "caveman-stats"
 
-        # Anthropic skills (only frontend-design)
-        frontend-design.enable = true;
+          # Anthropic skills
+          "frontend-design"
 
-        # Ponytail skills
-        ponytail.enable = true;
-        ponytail-audit.enable = true;
-        ponytail-debt.enable = true;
-        ponytail-gain.enable = true;
-        ponytail-help.enable = true;
-        ponytail-review.enable = true;
+          # Ponytail skills
+          "ponytail"
+          "ponytail-audit"
+          "ponytail-debt"
+          "ponytail-gain"
+          "ponytail-help"
+          "ponytail-review"
 
-        # Lavish skills
-        lavish.enable = true;
+          # Lavish
+          "lavish"
 
-        # Chrome DevTools skill
-        chrome-devtools-axi.enable = true;
+          # Chrome DevTools
+          "chrome-devtools-axi"
+        ];
       };
       targets = {
         pi.enable = true;
