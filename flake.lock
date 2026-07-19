@@ -84,6 +84,22 @@
         "type": "github"
       }
     },
+    "chrome-devtools-axi": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1783812213,
+        "narHash": "sha256-T++irJp19N+dwiCBOzTlltGFWXu6yuuNzrynrQs8PpA=",
+        "owner": "kunchenguid",
+        "repo": "chrome-devtools-axi",
+        "rev": "cc740e87c02590fdb63b235f2dc584801f514e8c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kunchenguid",
+        "repo": "chrome-devtools-axi",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -287,6 +303,7 @@
         "agent-skills-nix": "agent-skills-nix",
         "anthropic-skills": "anthropic-skills",
         "caveman": "caveman",
+        "chrome-devtools-axi": "chrome-devtools-axi",
         "home-manager": "home-manager_2",
         "lavish-axi": "lavish-axi",
         "llm-agents": "llm-agents",

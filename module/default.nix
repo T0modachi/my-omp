@@ -42,6 +42,10 @@
           path = inputs.lavish-axi.outPath;
           subdir = "skills";
         };
+        chrome-devtools = {
+          path = inputs.chrome-devtools-axi.outPath;
+          subdir = "skills";
+        };
       };
       skills = {
         # Caveman skills
@@ -66,6 +70,9 @@
 
         # Lavish skills
         lavish.enable = true;
+
+        # Chrome DevTools skill
+        chrome-devtools-axi.enable = true;
       };
       targets = {
         pi.enable = true;

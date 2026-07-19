@@ -30,6 +30,10 @@
       url = "github:kunchenguid/lavish-axi";
       flake = false;
     };
+    chrome-devtools-axi = {
+      url = "github:kunchenguid/chrome-devtools-axi";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {

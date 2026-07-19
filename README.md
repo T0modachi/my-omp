@@ -54,6 +54,7 @@ This module enables the following skills and MCP servers.
 | `ponytail-help` | Quick-reference card for all ponytail modes and commands. | `/ponytail-help` |
 | `ponytail-review` | Code review focused on over-engineering. One line per finding. | "review for over-engineering", "simplify review" |
 | `lavish` | Turn complex responses into rich HTML artifacts for visual review and annotation. | "visual artifact", "interactive prototype", `/lavish` |
+| `chrome-devtools-axi` | Agent-ergonomic Chrome DevTools CLI. Wraps chrome-devtools-mcp with TOON-encoded output (~57% fewer input tokens vs raw MCP). Use for any task that needs a real browser: navigate, click, fill forms, snapshot DOM, debug console/network, audit performance. | Any task needing a real browser (auto-loaded when detected; `user-invocable: false`) |
 
 ### MCPs
 
