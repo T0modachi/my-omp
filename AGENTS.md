@@ -29,6 +29,7 @@
 - Keep the flake minimal. Only add new inputs/packages if they are necessary for the OMP configuration.
 - Prefer existing patterns over introducing new ones.
 - Do not modify auto-generated files or `CHANGELOG.md` manually.
+- When adding a new skill or MCP to the configuration (in `module/default.nix` or `config/mcp.json`), update the "Skills & MCPs" catalog in README.md with the new item's name, description, and trigger.
 - When editing Nix files, prefer the existing formatting style; if a formatter is present, run it before finishing.
 - There are no automated tests. Verify changes by evaluating the flake or checking the Home Manager configuration.
 
