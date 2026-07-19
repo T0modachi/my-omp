@@ -34,6 +34,10 @@
       url = "github:kunchenguid/chrome-devtools-axi";
       flake = false;
     };
+    mattpocock-skills = {
+      url = "github:mattpocock/skills";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {

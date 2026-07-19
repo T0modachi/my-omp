@@ -46,6 +46,10 @@
           path = inputs.chrome-devtools-axi.outPath;
           subdir = "skills";
         };
+        mattpocock = {
+          path = inputs.mattpocock-skills.outPath;
+          subdir = "skills";
+        };
       };
       skills = {
         enable = [
@@ -74,6 +78,9 @@
 
           # Chrome DevTools
           "chrome-devtools-axi"
+
+          # Matt Pocock skills
+          "productivity/grill-me"
         ];
       };
       targets = {
