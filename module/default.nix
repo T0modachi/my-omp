@@ -12,6 +12,7 @@
       inputs.llm-agents.packages.${pkgs.system}.codegraph
       inputs.mcp-servers-nix.packages.${pkgs.system}.context7-mcp
       inputs.mcp-servers-nix.packages.${pkgs.system}.tavily-mcp
+      pkgs.nodejs_22
     ] ++ import ../lsp.nix { inherit pkgs; };
 
     # OMP config files
@@ -35,6 +36,10 @@
         };
         ponytail = {
           path = inputs.ponytail.outPath;
+          subdir = "skills";
+        };
+        lavish = {
+          path = inputs.lavish-axi.outPath;
           subdir = "skills";
         };
       };

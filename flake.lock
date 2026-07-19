@@ -146,6 +146,22 @@
         "type": "github"
       }
     },
+    "lavish-axi": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784062430,
+        "narHash": "sha256-X1TzDjBoRYRnp63nSWOVa4qhBHIzio5wNdGk8sWmeMQ=",
+        "owner": "kunchenguid",
+        "repo": "lavish-axi",
+        "rev": "55045850f61e7b23c8dbf8cc30d92bd6e31649d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kunchenguid",
+        "repo": "lavish-axi",
+        "type": "github"
+      }
+    },
     "llm-agents": {
       "inputs": {
         "bun2nix": "bun2nix",
@@ -272,6 +288,7 @@
         "anthropic-skills": "anthropic-skills",
         "caveman": "caveman",
         "home-manager": "home-manager_2",
+        "lavish-axi": "lavish-axi",
         "llm-agents": "llm-agents",
         "mcp-servers-nix": "mcp-servers-nix",
         "nixpkgs": "nixpkgs_4",

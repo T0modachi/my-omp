@@ -26,6 +26,10 @@
       url = "github:DietrichGebert/ponytail";
       flake = false;
     };
+    lavish-axi = {
+      url = "github:kunchenguid/lavish-axi";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
