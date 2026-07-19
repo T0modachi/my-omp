@@ -44,7 +44,28 @@
         };
       };
       skills = {
-        enableAll = true;
+        # Caveman skills
+        caveman.enable = true;
+        cavecrew.enable = true;
+        caveman-commit.enable = true;
+        caveman-compress.enable = true;
+        caveman-help.enable = true;
+        caveman-review.enable = true;
+        caveman-stats.enable = true;
+
+        # Anthropic skills (only frontend-design)
+        frontend-design.enable = true;
+
+        # Ponytail skills
+        ponytail.enable = true;
+        ponytail-audit.enable = true;
+        ponytail-debt.enable = true;
+        ponytail-gain.enable = true;
+        ponytail-help.enable = true;
+        ponytail-review.enable = true;
+
+        # Lavish skills
+        lavish.enable = true;
       };
       targets = {
         pi.enable = true;
