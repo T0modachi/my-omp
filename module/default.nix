@@ -80,6 +80,7 @@
           "chrome-devtools-axi"
 
           # Matt Pocock skills
+          "engineering/ask-matt"
           "engineering/code-review"
           "engineering/codebase-design"
           "engineering/diagnosing-bugs"
@@ -97,7 +98,10 @@
           "engineering/triage"
           "engineering/wayfinder"
           "productivity/grill-me"
+          "productivity/grilling"
+          "productivity/handoff"
           "productivity/teach"
+          "productivity/writing-great-skills"
         ];
       };
       targets = {

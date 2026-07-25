@@ -55,6 +55,7 @@ This module enables the following skills and MCP servers.
 | `ponytail-review` | Code review focused on over-engineering. One line per finding. | "review for over-engineering", "simplify review" |
 | `lavish` | Turn complex responses into rich HTML artifacts for visual review and annotation. | "visual artifact", "interactive prototype", `/lavish` |
 | `chrome-devtools-axi` | Agent-ergonomic Chrome DevTools CLI. Wraps chrome-devtools-mcp with TOON-encoded output (~57% fewer input tokens vs raw MCP). Use for any task that needs a real browser: navigate, click, fill forms, snapshot DOM, debug console/network, audit performance. | Any task needing a real browser (auto-loaded when detected; `user-invocable: false`) |
+| `engineering/ask-matt` | Router - asks which skill or flow fits your situation. | "which skill", "what should I use" |
 | `engineering/code-review` | Two-axis review: Standards (coding standards) and Spec (matches issue/PRD). Runs both in parallel sub-agents. | "review since X", "review this branch/PR" |
 | `engineering/codebase-design` | Shared vocabulary for designing deep modules (module, interface, seam, adapter, leverage). Use when designing or improving module interfaces. | "design module interface", "find deepening opportunities" |
 | `engineering/diagnosing-bugs` | Diagnosis loop for hard bugs and performance regressions. Builds tight feedback loops. | "diagnose", "debug this", reports broken/slow behavior |
@@ -72,7 +73,10 @@ This module enables the following skills and MCP servers.
 | `engineering/triage` | Move issues and PRs through state machine of triage roles - categorize, verify, grill, write agent-ready briefs. | "triage issues", "categorize PRs" |
 | `engineering/wayfinder` | Plan huge work as shared map of decision tickets on issue tracker, resolve one at a time. | "wayfinder", "plan big effort", "chart the way" |
 | `productivity/grill-me` | Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved. | "grill me", `/grill-me` |
+| `productivity/grilling` | Grill the user relentlessly about a plan, decision, or idea. Stress-test thinking. | "grill me about X", stress-test thinking |
+| `productivity/handoff` | Compact current conversation into a handoff document for another agent to pick up. | "handoff", "hand off to another agent" |
 | `productivity/teach` | Teach user a new skill/concept over multiple sessions in a workspace with mission, resources, lessons, and learning records. | "teach me", "learn about X" |
+| `productivity/writing-great-skills` | Reference for writing and editing skills well - vocabulary and principles that make a skill predictable. | Writing/editing skills |
 
 ### MCPs
 
