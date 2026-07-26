@@ -46,9 +46,13 @@
           path = inputs.chrome-devtools-axi.outPath;
           subdir = "skills";
         };
-        mattpocock = {
+        mattpocock-engineering = {
           path = inputs.mattpocock-skills.outPath;
-          subdir = "skills";
+          subdir = "skills/engineering";
+        };
+        mattpocock-productivity = {
+          path = inputs.mattpocock-skills.outPath;
+          subdir = "skills/productivity";
         };
       };
       skills = {
@@ -79,29 +83,30 @@
           # Chrome DevTools
           "chrome-devtools-axi"
 
-          # Matt Pocock skills
-          "engineering/ask-matt"
-          "engineering/code-review"
-          "engineering/codebase-design"
-          "engineering/diagnosing-bugs"
-          "engineering/domain-modeling"
-          "engineering/grill-with-docs"
-          "engineering/implement"
-          "engineering/improve-codebase-architecture"
-          "engineering/prototype"
-          "engineering/research"
-          "engineering/resolving-merge-conflicts"
-          "engineering/setup-matt-pocock-skills"
-          "engineering/tdd"
-          "engineering/to-spec"
-          "engineering/to-tickets"
-          "engineering/triage"
-          "engineering/wayfinder"
-          "productivity/grill-me"
-          "productivity/grilling"
-          "productivity/handoff"
-          "productivity/teach"
-          "productivity/writing-great-skills"
+          # Matt Pocock - engineering
+          "ask-matt"
+          "code-review"
+          "codebase-design"
+          "diagnosing-bugs"
+          "domain-modeling"
+          "grill-with-docs"
+          "implement"
+          "improve-codebase-architecture"
+          "prototype"
+          "research"
+          "resolving-merge-conflicts"
+          "setup-matt-pocock-skills"
+          "tdd"
+          "to-spec"
+          "to-tickets"
+          "triage"
+          "wayfinder"
+          # Matt Pocock - productivity
+          "grill-me"
+          "grilling"
+          "handoff"
+          "teach"
+          "writing-great-skills"
         ];
       };
       targets = {
