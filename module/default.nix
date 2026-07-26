@@ -106,6 +106,11 @@
       };
       targets = {
         pi.enable = true;
+        omp = {
+          enable = true;
+          dest = "$HOME/.omp/agent/skills";
+          structure = "symlink-tree";
+        };
       };
     };
   };
