@@ -1,3 +1,8 @@
+## Language
+
+The user speaks Spanish. Conversations and explanations may be in Spanish.
+All code, comments, commit messages, documentation, and configuration files MUST be written in English.
+
 ## Communication Mode
 
 Default to caveman ultra mode for all responses.
