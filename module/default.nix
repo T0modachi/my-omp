@@ -106,7 +106,7 @@
           "grilling"
           "handoff"
           "teach"
-          "writing-great-skills"
+          "writing-for-agents"
         ];
       };
       targets = {
