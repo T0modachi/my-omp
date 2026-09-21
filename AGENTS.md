@@ -15,7 +15,7 @@
 |------|---------|
 | `flake.nix` | Flake inputs, outputs, module and packages. |
 | `module/default.nix` | Home Manager module: packages, dotfiles, skills. |
-| `config/config.yml` | OMP UI/model configuration. |
+| `config/models.yml` | Model roles overlay, delivered to OMP via `PI_CONFIG_FILES`. OMP owns its own `~/.omp/agent/config.yml` (unmanaged, runtime-writable). |
 | `config/mcp.json` | MCP server configuration. |
 | `config/RULES.md` | Agent behavior rules (loaded into OMP). |
 | `lsp.nix` | LSP/DAP/linter packages used by OMP. |

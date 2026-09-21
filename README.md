@@ -28,7 +28,9 @@ outputs = { self, my-omp, ... }@inputs: {
 
 - `flake.nix` - Main flake exposing module and packages.
 - `module/default.nix` - Home Manager module.
-- `config/` - OMP config files (`config.yml`, `mcp.json`, `RULES.md`).
+- `config/` - OMP config files (`models.yml`, `mcp.json`, `RULES.md`).
+
+Model roles (`models.yml`) are injected as a read-only overlay via the `PI_CONFIG_FILES` environment variable, so they always win over OMP's own config. `~/.omp/agent/config.yml` is owned by OMP itself (runtime-writable, never reset by Home Manager). Managed files use `force = true`: the repo always wins over manual edits.
 - `lsp.nix` - LSP/DAP/linter packages for OMP integration.
 
 ## Skills & MCPs

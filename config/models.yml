@@ -1,8 +1,7 @@
-symbolPreset: nerd
-theme:
-  dark: titanium
-  light: light
-setupVersion: 1
+# Model roles entregados a OMP como overlay global via PI_CONFIG_FILES.
+# OMP posee su propio ~/.omp/agent/config.yml (escribible en runtime);
+# este overlay solo fija modelRoles + cycleOrder y gana sobre ese archivo
+# (precedencia: runtime > overlay > project > global > default).
 # ============================================================
 # Configuraciones alternativas (comentadas — descomenta UNA y
 # comenta/sustituye el bloque `modelRoles` + `cycleOrder` de arriba)
@@ -35,6 +34,7 @@ cycleOrder:
 # cycleOrder:
 #   - default
 #   - smol
+#   - slow
 
 # --- Alternativa C: Prioriza resultados (mejor modelo ADECUADO a cada rol) ---
 # En cada rol, el modelo más capaz apropiado para esa tarea (no sobrecualificar).

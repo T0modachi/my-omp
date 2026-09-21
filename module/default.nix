@@ -15,12 +15,28 @@
       pkgs.nodejs_22
     ] ++ import ../lsp.nix { inherit pkgs; };
 
-    # OMP config files
+    # OMP config files. ~/.omp/agent/config.yml is intentionally NOT
+    # managed: OMP owns it and writes it at runtime (TUI settings, setup
+    # wizard). Model roles are delivered as a read-only overlay through
+    # PI_CONFIG_FILES, which takes precedence over OMP's own config.
+    # force = true: the repo always wins over manual edits at the target.
     home.file = {
-      ".omp/agent/config.yml".source = ../config/config.yml;
-      ".omp/agent/mcp.json".source = ../config/mcp.json;
-      ".omp/agent/RULES.md".source = ../config/RULES.md;
+      ".omp/agent/models.yml" = {
+        source = ../config/models.yml;
+        force = true;
+      };
+      ".omp/agent/mcp.json" = {
+        source = ../config/mcp.json;
+        force = true;
+      };
+      ".omp/agent/RULES.md" = {
+        source = ../config/RULES.md;
+        force = true;
+      };
     };
+
+    # Model roles overlay (runtime > overlay > project > global > default).
+    home.sessionVariables.PI_CONFIG_FILES = "${config.home.homeDirectory}/.omp/agent/models.yml";
 
     # Skills configuration
     programs.agent-skills = {
