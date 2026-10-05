@@ -110,7 +110,6 @@
           "improve-codebase-architecture"
           "prototype"
           "research"
-          "resolving-merge-conflicts"
           "setup-matt-pocock-skills"
           "tdd"
           "to-spec"
