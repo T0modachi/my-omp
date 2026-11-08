@@ -6,7 +6,7 @@
 # Alternatives (commented out — uncomment ONE and comment/replace
 # the active `modelRoles` + `cycleOrder` block above).
 # Prices are per 1M tokens: Input / Output / Cached Read / Cached Write.
-# Slug format (opencode-go/<model>%) matches the active config.
+# Slug format: opencode-go/<model> (matches opencode.ai provider slugs).
 # Source: https://opencode.ai/docs/go (pricing as of 2026-11-07).
 # ============================================================
 
@@ -15,9 +15,9 @@
 # smol     MiMo-V2.6-Flash     $0.14 / $0.28 / $0.0028        cheapest capable light turns
 # slow     Qwen3.7 Plus        $0.40 / $1.60 / $0.04 / $0.50  deep reasoning without paying Max
 modelRoles:
-  default: opencode-go/kimi-k2.7-code%
-  smol: opencode-go/mimo-v2.6-flash%
-  slow: opencode-go/qwen3.7-plus%
+  default: opencode-go/kimi-k2.7-code
+  smol: opencode-go/mimo-v2.6-flash
+  slow: opencode-go/qwen3.7-plus
 cycleOrder:
   - default
   - smol
@@ -28,9 +28,9 @@ cycleOrder:
 # smol     MiMo-V2.6-Flash     $0.14 / $0.28 / $0.0028        cheapest capable light turns
 # slow     Qwen3.8 Max         $2.00 / $6.00 / $0.25 / $2.50  latest deep-reasoning flagship
 # modelRoles:
-#   default: opencode-go/kimi-k2.7-code%
-#   smol: opencode-go/mimo-v2.6-flash%
-#   slow: opencode-go/qwen3.8-max%
+#   default: opencode-go/kimi-k2.7-code
+#   smol: opencode-go/mimo-v2.6-flash
+#   slow: opencode-go/qwen3.8-max
 # cycleOrder:
 #   - default
 #   - smol
@@ -42,9 +42,9 @@ cycleOrder:
 # slow     Qwen3.7 Plus        $0.40 / $1.60 / $0.04 / $0.50  cheapest deep-reasoning option
 # (MiMo / DeepSeek Flash are cheaper but lack the reasoning/context needed for `slow`.)
 # modelRoles:
-#   default: opencode-go/minimax-m3.1-flash%
-#   smol: opencode-go/mimo-v2.6-flash%
-#   slow: opencode-go/qwen3.7-plus%
+#   default: opencode-go/minimax-m3.1-flash
+#   smol: opencode-go/mimo-v2.6-flash
+#   slow: opencode-go/qwen3.7-plus
 # cycleOrder:
 #   - default
 #   - smol
@@ -56,9 +56,9 @@ cycleOrder:
 # slow     Qwen3.8 Max         $2.00 / $6.00 / $0.25 / $2.50  latest deep-reasoning flagship
 # (Qwen3.8 Max in `smol` would be too slow/expensive for quick turns.)
 # modelRoles:
-#   default: opencode-go/kimi-k2.7-code%
-#   smol: opencode-go/glm-5.3%
-#   slow: opencode-go/qwen3.8-max%
+#   default: opencode-go/kimi-k2.7-code
+#   smol: opencode-go/glm-5.3
+#   slow: opencode-go/qwen3.8-max
 # cycleOrder:
 #   - default
 #   - smol
